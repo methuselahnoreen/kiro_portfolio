@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Methuselah Noreen Presbitero — CEO</title>
+  <style>
+    :root {
+      --bg: #0e0e11;
+      --surface: #17171c;
+      --border: #26262e;
+      --text: #e8e8ea;
+      --muted: #9a9aa5;
+      --accent: #8b5cf6;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: clamp(1.5rem, 5vw, 3rem) clamp(1.25rem, 5vw, 2rem);
+    }
+
+    /* Header */
+    header { padding-top: clamp(2rem, 8vw, 5rem); }
+
+    h1 {
+      font-size: clamp(2rem, 8vw, 3.25rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .accent-rule {
+      width: 64px;
+      height: 4px;
+      background: var(--accent);
+      border-radius: 2px;
+      margin: 1.25rem 0;
+    }
+
+    .role {
+      font-size: clamp(1.05rem, 3.5vw, 1.35rem);
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .role strong { color: var(--accent); font-weight: 600; }
+
+    /* Projects */
+    .projects {
+      margin-top: clamp(2.5rem, 8vw, 4rem);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: clamp(1rem, 3vw, 1.5rem);
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: clamp(1.25rem, 4vw, 1.75rem);
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+    .card:hover,
+    .card:focus-within {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      flex: 1;
+      margin-bottom: 1.1rem;
+    }
+
+    .card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      align-self: flex-start;
+    }
+    .card a:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer { margin-top: auto; }
+
+    .footer-inner {
+      border-top: 1px solid var(--border);
+      margin-top: clamp(2.5rem, 8vw, 4rem);
+      padding-top: 1.75rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.5rem;
+      align-items: center;
+    }
+
+    .footer-inner a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+    }
+    .footer-inner a:hover { color: var(--accent); }
+
+    /* Focus states for keyboard users */
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Methuselah Noreen Presbitero</h1>
+      <div class="accent-rule"></div>
+      <p class="role"><strong>CEO</strong></p>
+    </header>
+
+    <main class="projects">
+      <article class="card">
+        <h3>InklusiJobs</h3>
+        <p>Helps PWDs become verified, job-ready professionals through personalized learning paths, portfolio challenges, and AI-driven skill verification — with adaptive, accessible interfaces.</p>
+        <a href="https://inklusi-jobs.vercel.app" target="_blank" rel="noopener">Visit project →</a>
+      </article>
+
+      <article class="card">
+        <h3>Last Moon</h3>
+        <p>A 1v1 LAN multiplayer strategy game built in Godot 4, inspired by the Philippine myth of the Bakunawa, the great sea serpent that devours the moon.</p>
+        <a href="https://chachingiii.itch.io/last-moon" target="_blank" rel="noopener">Visit project →</a>
+      </article>
+
+      <article class="card">
+        <h3>AyaSib</h3>
+        <p>A Cebuano-first services assistant.</p>
+        <a href="https://ayasib.vercel.app" target="_blank" rel="noopener">Visit project →</a>
+      </article>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <a href="mailto:methuselahpresbitero@gmail.com">Email</a>
+        <a href="https://github.com/methuselahnoreen" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" rel="noopener">LinkedIn</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
